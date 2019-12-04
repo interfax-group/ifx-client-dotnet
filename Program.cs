@@ -8,7 +8,7 @@ namespace IFXClient
         static void Main(string[] args)
         {
             // создание soap - клиента
-            var _soapClient = new SoapClient("http://services.ifx.ru/IFXService.svc/"/*Url сервиса апи*/);
+            var _soapClient = new SoapClient("https://services.ifx.ru/IFXService.svc/"/*Url сервиса апи*/);
 
             // открытие сессии
             if (_soapClient.OpenSession("your_client"/*клиент*/, "ru-RU"/*язык*/, "your_login"/*логин*/, "your_password"/*пароль*/))
